@@ -19,12 +19,6 @@ export default defineConfig({
         globals: {
           vue: 'Vue',
         },
-        manualChunks(id) {
-          const match = id.match(/src\/components\/(.+\.vue)/);
-          if (match) {
-            return match[1].replace('.vue', '');
-          }
-        },
       },
     },
   },

@@ -1,55 +1,55 @@
-import { defineComponent as w, ref as v, openBlock as r, createElementBlock as c, Fragment as x, createElementVNode as e, normalizeClass as m, renderSlot as C, pushScopeId as L, popScopeId as q, renderList as y, toDisplayString as k, normalizeStyle as M, withDirectives as N, vModelText as V, computed as I, unref as H, watch as O, onMounted as R, onUnmounted as P, vShow as U } from "vue";
-const Y = (o) => (L("data-v-cfe0ca7e"), o = o(), q(), o), G = { class: "flex items-center" }, J = /* @__PURE__ */ Y(() => /* @__PURE__ */ e("div", null, null, -1)), K = /* @__PURE__ */ w({
+import { defineComponent as w, ref as v, openBlock as i, createElementBlock as r, Fragment as b, createElementVNode as l, normalizeClass as _, renderSlot as I, pushScopeId as R, popScopeId as q, renderList as y, toDisplayString as k, normalizeStyle as M, withDirectives as B, vModelText as Y, onMounted as E, onUnmounted as O, computed as S, createBlock as N, withCtx as P, unref as G, watch as X, vShow as J } from "vue";
+const K = (o) => (R("data-v-cfe0ca7e"), o = o(), q(), o), Q = { class: "flex items-center" }, W = /* @__PURE__ */ K(() => /* @__PURE__ */ l("div", null, null, -1)), Z = /* @__PURE__ */ w({
   __name: "HeaderModalButton",
   setup(o) {
-    const n = v(!1), t = v(!1), s = v(1), l = v(!1), a = () => {
-      n.value = !1, t.value = !1, setTimeout(() => {
+    const n = v(!1), e = v(!1), s = v(1), t = v(!1), a = () => {
+      n.value = !1, e.value = !1, setTimeout(() => {
         s.value = 1;
       }, 700), document.body.style.overflow = "auto";
-    }, u = () => {
-      n.value === !0 ? (n.value = !1, document.body.style.overflow = "auto") : (t.value = !0, s.value = 5, setTimeout(() => {
+    }, c = () => {
+      n.value === !0 ? (n.value = !1, document.body.style.overflow = "auto") : (e.value = !0, s.value = 5, setTimeout(() => {
         n.value = !0;
       }, 700), document.body.style.overflow = "hidden");
     }, d = () => {
-      s.value === 1 && (l.value = !0);
-    }, i = () => {
-      l.value = !1;
+      s.value === 1 && (t.value = !0);
+    }, u = () => {
+      t.value = !1;
     };
-    return (f, b) => (r(), c(x, null, [
-      e("div", G, [
-        e("i", {
-          class: m([[
-            l.value && s.value == 1 ? "hover:text-white hover:bg-[#A9141A] hover:rotate-90 " : "",
-            t.value ? "scale-[70]" : "scale-100",
+    return (f, x) => (i(), r(b, null, [
+      l("div", Q, [
+        l("i", {
+          class: _([[
+            t.value && s.value == 1 ? "hover:text-white hover:bg-[#A9141A] hover:rotate-90 " : "",
+            e.value ? "scale-[70]" : "scale-100",
             s.value != 1 ? "bg-[#A9141A] border-none" : "xi-drag-vertical"
           ], "z-[2222] w-[4.5rem] h-[4.5rem] transition-transform duration-500 delay-0 hamburger-nav-button cursor-pointer text-3xl lg:text-5xl"]),
-          onClick: u,
+          onClick: c,
           onMouseover: d,
-          onMouseout: i
+          onMouseout: u
         }, null, 34)
       ]),
-      e("div", {
-        class: m(["hamburger-nav-inside", [n.value ? "visible opacity-100" : "invisible opacity-0"]])
+      l("div", {
+        class: _(["hamburger-nav-inside", [n.value ? "visible opacity-100" : "invisible opacity-0"]])
       }, [
-        e("div", { class: "flex items-center justify-between mb-10 large-container-custom mt-14" }, [
-          J,
-          e("button", { onClick: a }, [
-            e("i", {
+        l("div", { class: "flex items-center justify-between mb-10 large-container-custom mt-14" }, [
+          W,
+          l("button", { onClick: a }, [
+            l("i", {
               class: "xi-close text-4xl text-white bg-[#981E23] w-24 h-24 rounded-full cursor-pointer hover:rotate-90 flex items-center justify-center transition-transform duration-500 delay-0",
               onClick: a
             })
           ])
         ]),
-        C(f.$slots, "inside-modal", {}, void 0, !0)
+        I(f.$slots, "inside-modal", {}, void 0, !0)
       ], 2)
     ], 64));
   }
-}), S = (o, n) => {
-  const t = o.__vccOpts || o;
-  for (const [s, l] of n)
-    t[s] = l;
-  return t;
-}, Ge = /* @__PURE__ */ S(K, [["__scopeId", "data-v-cfe0ca7e"]]), Q = { class: "focus-area" }, W = { class: "max-w-[76%]" }, Z = /* @__PURE__ */ w({
+}), C = (o, n) => {
+  const e = o.__vccOpts || o;
+  for (const [s, t] of n)
+    e[s] = t;
+  return e;
+}, Qe = /* @__PURE__ */ C(Z, [["__scopeId", "data-v-cfe0ca7e"]]), ee = { class: "focus-area" }, te = { class: "max-w-[76%]" }, le = /* @__PURE__ */ w({
   __name: "ListDeco",
   props: {
     list: {
@@ -61,23 +61,23 @@ const Y = (o) => (L("data-v-cfe0ca7e"), o = o(), q(), o), G = { class: "flex ite
   },
   setup(o) {
     const n = o;
-    return (t, s) => (r(), c("div", null, [
-      e("ul", Q, [
-        (r(!0), c(x, null, y(n.list, (l, a) => (r(), c("li", { key: a }, [
-          e("p", W, k(l.contents), 1)
+    return (e, s) => (i(), r("div", null, [
+      l("ul", ee, [
+        (i(!0), r(b, null, y(n.list, (t, a) => (i(), r("li", { key: a }, [
+          l("p", te, k(t.contents), 1)
         ]))), 128))
       ])
     ]));
   }
-}), Je = /* @__PURE__ */ S(Z, [["__scopeId", "data-v-0cef9593"]]), E = (o) => (L("data-v-a2e32ff2"), o = o(), q(), o), ee = { class: "relative flex flex-col items-start max-w-full lg:flex-row" }, te = { class: "relative flex flex-row items-center overflow-hidden slider-container lg:flex-col lg:items-end lg:basis-1/2 lg:pr-28 2xl:pr-48" }, le = ["disabled"], se = /* @__PURE__ */ E(() => /* @__PURE__ */ e("i", { class: "xi-arrow-up" }, null, -1)), ne = [
-  se
-], oe = { class: "h-[300px] overflow-hidden hidden lg:block" }, ae = { class: "justify-between hidden h-full overflow-hidden slider lg:flex lg:flex-col" }, ie = ["onClick"], re = { class: "text-center select-none year" }, ce = ["disabled"], ue = /* @__PURE__ */ E(() => /* @__PURE__ */ e("i", { class: "xi-arrow-down" }, null, -1)), de = [
-  ue
-], ve = { class: "w-full overflow-hidden lg:hidden" }, fe = { class: "flex justify-between w-full overflow-hidden slider slider-small lg:hidden" }, _e = ["onClick"], he = { class: "year" }, pe = { class: "flex justify-between w-full mt-4 lg:hidden" }, me = ["disabled"], xe = /* @__PURE__ */ E(() => /* @__PURE__ */ e("i", { class: "xi-arrow-left" }, null, -1)), ge = [
-  xe
-], ye = ["disabled"], be = /* @__PURE__ */ E(() => /* @__PURE__ */ e("i", { class: "xi-arrow-right" }, null, -1)), we = [
-  be
-], $e = { class: "relative flex w-full mt-8 content-container lg:basis-1/2 lg:pl-28 2xl:pl-48 sm:mt-12" }, ke = ["max"], Ie = /* @__PURE__ */ w({
+}), We = /* @__PURE__ */ C(le, [["__scopeId", "data-v-0cef9593"]]), L = (o) => (R("data-v-a2e32ff2"), o = o(), q(), o), se = { class: "relative flex flex-col items-start max-w-full lg:flex-row" }, ne = { class: "relative flex flex-row items-center overflow-hidden slider-container lg:flex-col lg:items-end lg:basis-1/2 lg:pr-28 2xl:pr-48" }, oe = ["disabled"], ae = /* @__PURE__ */ L(() => /* @__PURE__ */ l("i", { class: "xi-arrow-up" }, null, -1)), ie = [
+  ae
+], re = { class: "h-[300px] overflow-hidden hidden lg:block" }, ce = { class: "justify-between hidden h-full overflow-hidden slider lg:flex lg:flex-col" }, ue = ["onClick"], de = { class: "text-center select-none year" }, ve = ["disabled"], fe = /* @__PURE__ */ L(() => /* @__PURE__ */ l("i", { class: "xi-arrow-down" }, null, -1)), _e = [
+  fe
+], he = { class: "w-full overflow-hidden lg:hidden" }, pe = { class: "flex justify-between w-full overflow-hidden slider slider-small lg:hidden" }, me = ["onClick"], xe = { class: "year" }, ge = { class: "flex justify-between w-full mt-4 lg:hidden" }, be = ["disabled"], ye = /* @__PURE__ */ L(() => /* @__PURE__ */ l("i", { class: "xi-arrow-left" }, null, -1)), we = [
+  ye
+], $e = ["disabled"], ke = /* @__PURE__ */ L(() => /* @__PURE__ */ l("i", { class: "xi-arrow-right" }, null, -1)), Se = [
+  ke
+], Ie = { class: "relative flex w-full mt-8 content-container lg:basis-1/2 lg:pl-28 2xl:pl-48 sm:mt-12" }, Ce = ["max"], Me = /* @__PURE__ */ w({
   __name: "SlideScroll",
   props: {
     list: {
@@ -88,142 +88,177 @@ const Y = (o) => (L("data-v-cfe0ca7e"), o = o(), q(), o), G = { class: "flex ite
     }
   },
   setup(o) {
-    const n = o, t = v(0), s = v(100);
-    function l() {
-      t.value < n.list.length - 1 && (t.value = (t.value + 1) % n.list.length, s.value -= 100);
+    const n = o, e = v(0), s = v(100);
+    function t() {
+      e.value < n.list.length - 1 && (e.value = (e.value + 1) % n.list.length, s.value -= 100);
     }
     function a() {
-      t.value > 0 && (t.value = (t.value - 1 + n.list.length) % n.list.length, s.value += 100);
+      e.value > 0 && (e.value = (e.value - 1 + n.list.length) % n.list.length, s.value += 100);
     }
-    function u(f) {
-      return f === t.value;
+    function c(f) {
+      return f === e.value;
     }
     function d(f) {
-      f < t.value ? a() : f > t.value && l();
+      f < e.value ? a() : f > e.value && t();
     }
-    function i() {
-      s.value = -100 * (t.value - 1);
+    function u() {
+      s.value = -100 * (e.value - 1);
     }
-    return (f, b) => (r(), c("article", null, [
-      e("div", ee, [
-        e("div", te, [
-          e("button", {
+    return (f, x) => (i(), r("article", null, [
+      l("div", se, [
+        l("div", ne, [
+          l("button", {
             class: "hidden mb-8 mr-24 slide-button lg:block",
-            disabled: t.value === 0,
+            disabled: e.value === 0,
             onClick: a
-          }, ne, 8, le),
-          e("div", oe, [
-            e("div", ae, [
-              (r(!0), c(x, null, y(n.list, (_, g) => (r(), c("div", {
-                key: _.key,
-                class: m(["slide", { active: u(g) }]),
+          }, ie, 8, oe),
+          l("div", re, [
+            l("div", ce, [
+              (i(!0), r(b, null, y(n.list, (h, g) => (i(), r("div", {
+                key: h.key,
+                class: _(["slide", { active: c(g) }]),
                 style: M({ transform: `translateY(${s.value}%)` }),
                 onClick: (T) => d(g)
               }, [
-                e("div", re, k(_.key), 1)
-              ], 14, ie))), 128))
+                l("div", de, k(h.key), 1)
+              ], 14, ue))), 128))
             ])
           ]),
-          e("button", {
+          l("button", {
             class: "hidden mt-8 mb-12 mr-24 slide-button lg:block",
-            disabled: t.value === n.list.length - 1,
-            onClick: l
-          }, de, 8, ce)
+            disabled: e.value === n.list.length - 1,
+            onClick: t
+          }, _e, 8, ve)
         ]),
-        e("div", ve, [
-          e("div", fe, [
-            (r(!0), c(x, null, y(n.list, (_, g) => (r(), c("div", {
-              key: _.key,
-              class: m(["slide", { active: u(g) }]),
+        l("div", he, [
+          l("div", pe, [
+            (i(!0), r(b, null, y(n.list, (h, g) => (i(), r("div", {
+              key: h.key,
+              class: _(["slide", { active: c(g) }]),
               style: M({ transform: `translateX(${s.value}%)` }),
               onClick: (T) => d(g)
             }, [
-              e("div", he, k(_.key), 1)
-            ], 14, _e))), 128))
+              l("div", xe, k(h.key), 1)
+            ], 14, me))), 128))
           ])
         ]),
-        e("div", pe, [
-          e("button", {
+        l("div", ge, [
+          l("button", {
             class: "slide-button",
-            disabled: t.value === 0,
+            disabled: e.value === 0,
             onClick: a
-          }, ge, 8, me),
-          e("button", {
+          }, we, 8, be),
+          l("button", {
             class: "slide-button",
-            disabled: t.value === n.list.length - 1,
-            onClick: l
-          }, we, 8, ye)
+            disabled: e.value === n.list.length - 1,
+            onClick: t
+          }, Se, 8, $e)
         ]),
-        e("div", $e, [
-          N(e("input", {
+        l("div", Ie, [
+          B(l("input", {
             id: "range",
-            "onUpdate:modelValue": b[0] || (b[0] = (_) => t.value = _),
+            "onUpdate:modelValue": x[0] || (x[0] = (h) => e.value = h),
             class: "range-slider absolute hidden lg:block cursor-pointer rotate-90 -left-60 top-[11.313rem] w-[29.625rem]",
             type: "range",
             min: "0",
             max: n.list.length - 1,
-            onInput: i
-          }, null, 40, ke), [
+            onInput: u
+          }, null, 40, Ce), [
             [
-              V,
-              t.value,
+              Y,
+              e.value,
               void 0,
               { number: !0 }
             ]
           ]),
-          e("ul", {
-            class: m(["w-full content", { active: t.value >= 0 }])
+          l("ul", {
+            class: _(["w-full content", { active: e.value >= 0 }])
           }, [
-            (r(!0), c(x, null, y(n.list[t.value].contents, (_) => (r(), c("li", {
-              key: _,
+            (i(!0), r(b, null, y(n.list[e.value].contents, (h) => (i(), r("li", {
+              key: h,
               class: "w-full mb-6 text-lg font-semibold sm:mb-11 text-left"
-            }, k(_), 1))), 128))
+            }, k(h), 1))), 128))
           ], 2)
         ])
       ])
     ]));
   }
-}), Ke = /* @__PURE__ */ S(Ie, [["__scopeId", "data-v-a2e32ff2"]]), Se = /* @__PURE__ */ w({
+}), Ze = /* @__PURE__ */ C(Me, [["__scopeId", "data-v-a2e32ff2"]]), z = /* @__PURE__ */ w({
+  __name: "AppearEffect",
+  emits: ["show"],
+  setup(o, { emit: n }) {
+    const e = n, s = v(!1), t = v(null), a = new IntersectionObserver((c) => {
+      c.forEach((d) => {
+        d.isIntersecting && !s.value && (s.value = !0, e("show", !0), t.value && a.unobserve(t.value));
+      });
+    });
+    return E(() => {
+      t.value && a.observe(t.value);
+    }), O(() => {
+      t.value && a.unobserve(t.value);
+    }), (c, d) => (i(), r("div", {
+      ref_key: "domRef",
+      ref: t,
+      class: _(["fade-animation", { "is-visible": s.value }])
+    }, [
+      I(c.$slots, "default")
+    ], 2));
+  }
+}), Te = /* @__PURE__ */ w({
   __name: "TextShow",
   props: {
     text: {},
     intervalMs: {}
   },
   setup(o) {
-    const n = o, s = I(() => n.text).value.split(""), l = I(() => n.intervalMs || 200);
-    return (a, u) => (r(), c("div", null, [
-      (r(!0), c(x, null, y(H(s), (d, i) => (r(), c("span", {
-        key: i,
-        style: M({ "animation-delay": `${i * l.value}ms` }),
-        class: "rotate-show-text"
-      }, k(d), 5))), 128))
-    ]));
+    const n = o, e = v(!1), t = S(() => n.text).value.split(""), a = S(() => n.intervalMs || 200);
+    function c() {
+      e.value = !0;
+    }
+    return (d, u) => (i(), N(z, { onShow: c }, {
+      default: P(() => [
+        (i(!0), r(b, null, y(G(t), (f, x) => (i(), r("span", {
+          key: x,
+          style: M({ "animation-delay": `${x * a.value}ms` }),
+          class: _(e.value ? "rotate-show-text" : "")
+        }, k(f), 7))), 128))
+      ]),
+      _: 1
+    }));
   }
-}), Qe = /* @__PURE__ */ S(Se, [["__scopeId", "data-v-2fc7cc41"]]), Ce = { class: "whitespace-pre-wrap" }, We = /* @__PURE__ */ w({
+}), et = /* @__PURE__ */ C(Te, [["__scopeId", "data-v-32c2999e"]]), Ae = { class: "whitespace-pre-wrap" }, tt = /* @__PURE__ */ w({
   __name: "TextTyping",
   props: {
     text: {},
     intervalMs: {}
   },
   setup(o) {
-    const n = o, t = I(() => n.text.replace(/\\n/g, `
-`).split("")), s = I(() => n.intervalMs || 100), l = v(0), a = v("");
-    let u = 0;
-    const d = I(() => t.value.length);
-    function i() {
-      l.value < d.value ? (a.value += t.value[l.value] || "", l.value += 1) : clearInterval(u);
+    const n = o, e = S(() => n.text.replace(/\\n/g, `
+`).split("")), s = S(() => n.intervalMs || 100), t = v(0), a = v("");
+    let c = 0;
+    const d = S(() => e.value.length);
+    function u() {
+      t.value < d.value ? (a.value += e.value[t.value] || "", t.value += 1) : clearInterval(c);
     }
     function f() {
-      a.value = "", l.value = 0, u = setInterval(i, s.value);
+      a.value = "", t.value = 0, c = setInterval(u, s.value);
     }
-    return f(), O(
+    function x() {
+      f();
+    }
+    return X(
       () => [n.text, n.intervalMs],
       () => {
-        clearInterval(u), f();
+        clearInterval(c), f();
       }
-    ), (b, _) => (r(), c("p", Ce, k(a.value), 1));
+    ), (h, g) => (i(), N(z, { onShow: x }, {
+      default: P(() => [
+        l("p", Ae, k(a.value), 1)
+      ]),
+      _: 1
+    }));
   }
-}), Ze = /* @__PURE__ */ w({
+}), lt = /* @__PURE__ */ w({
   __name: "FadeAnimation",
   props: {
     transitionDurationMs: {
@@ -238,25 +273,25 @@ const Y = (o) => (L("data-v-cfe0ca7e"), o = o(), q(), o), G = { class: "flex ite
     }
   },
   setup(o) {
-    const n = o, t = I(() => n.transitionDelayMs), s = I(() => n.transitionDurationMs), l = v(!1), a = v(null), u = new IntersectionObserver((d) => {
-      d.forEach((i) => {
-        i.isIntersecting && !l.value && (l.value = !0, a.value && u.unobserve(a.value));
+    const n = o, e = S(() => n.transitionDelayMs), s = S(() => n.transitionDurationMs), t = v(!1), a = v(null), c = new IntersectionObserver((d) => {
+      d.forEach((u) => {
+        u.isIntersecting && !t.value && (t.value = !0, a.value && c.unobserve(a.value));
       });
     });
-    return R(() => {
-      a.value && u.observe(a.value);
-    }), P(() => {
-      a.value && u.unobserve(a.value);
-    }), (d, i) => (r(), c("div", {
+    return E(() => {
+      a.value && c.observe(a.value);
+    }), O(() => {
+      a.value && c.unobserve(a.value);
+    }), (d, u) => (i(), r("div", {
       ref_key: "domRef",
       ref: a,
-      style: M({ transition: `${s.value}ms ${t.value}ms` }),
-      class: m(["fade-animation", { "is-visible": l.value }])
+      style: M({ transition: `${s.value}ms ${e.value}ms` }),
+      class: _(["fade-animation", { "is-visible": t.value }])
     }, [
-      C(d.$slots, "default")
+      I(d.$slots, "default")
     ], 6));
   }
-}), j = (o) => (L("data-v-19c6e92c"), o = o(), q(), o), Me = { class: "w-full h-[26.875rem] sm:h-[30.625rem] sm:w-[30.625rem] xl:h-[31.25rem] xl:w-[37.8125rem] mx-auto" }, Te = { class: "relative mx-auto -z-[1] h-full w-full sm:h-[30rem] sm:w-[30rem]" }, Ae = /* @__PURE__ */ j(() => /* @__PURE__ */ e("circle", {
+}), j = (o) => (R("data-v-19c6e92c"), o = o(), q(), o), De = { class: "w-full h-[26.875rem] sm:h-[30.625rem] sm:w-[30.625rem] xl:h-[31.25rem] xl:w-[37.8125rem] mx-auto" }, Ee = { class: "relative mx-auto -z-[1] h-full w-full sm:h-[30rem] sm:w-[30rem]" }, Le = /* @__PURE__ */ j(() => /* @__PURE__ */ l("circle", {
   cx: "50%",
   cy: "50%",
   r: "49%",
@@ -265,23 +300,23 @@ const Y = (o) => (L("data-v-cfe0ca7e"), o = o(), q(), o), G = { class: "flex ite
   "stroke-width": "2",
   "stroke-dasharray": "3,3",
   class: "rotated-circle"
-}, null, -1)), De = /* @__PURE__ */ j(() => /* @__PURE__ */ e("circle", {
+}, null, -1)), Re = /* @__PURE__ */ j(() => /* @__PURE__ */ l("circle", {
   cx: "50%",
   cy: "50%",
   r: "49%",
   fill: "#D74646",
   class: "scaled-circle opacity-10"
-}, null, -1)), Ee = /* @__PURE__ */ j(() => /* @__PURE__ */ e("circle", {
+}, null, -1)), qe = /* @__PURE__ */ j(() => /* @__PURE__ */ l("circle", {
   cx: "50%",
   cy: "50%",
   r: "30%",
   fill: "#D74646",
   class: ""
-}, null, -1)), Le = [
-  Ae,
-  De,
-  Ee
-], qe = { class: "font-[Poppins] font-semibold text-2xl sm:text-[2.625rem] text-white absolute z-10 w-full flex justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" }, Re = { class: "inline" }, je = { class: "w-full flex flex-col gap-6 2xl:h-auto 2xl:gap-[14.6875rem] items-center justify-center 2xl:absolute" }, Ne = { class: "w-full flex flex-col xl:flex-row gap-6 2xl:gap-[18.75rem] px-[0.9375rem]" }, Oe = { class: "w-full flex flex-col xl:flex-row gap-6 2xl:gap-[18.75rem] px-[0.9375rem]" }, Pe = /* @__PURE__ */ w({
+}, null, -1)), Oe = [
+  Le,
+  Re,
+  qe
+], je = { class: "font-[Poppins] font-semibold text-2xl sm:text-[2.625rem] text-white absolute z-10 w-full flex justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" }, Be = { class: "inline" }, Ne = { class: "w-full flex flex-col gap-6 2xl:h-auto 2xl:gap-[14.6875rem] items-center justify-center 2xl:absolute" }, Pe = { class: "w-full flex flex-col xl:flex-row gap-6 2xl:gap-[18.75rem] px-[0.9375rem]" }, Xe = { class: "w-full flex flex-col xl:flex-row gap-6 2xl:gap-[18.75rem] px-[0.9375rem]" }, ze = /* @__PURE__ */ w({
   __name: "CenteringEffect",
   props: {
     list: {
@@ -299,65 +334,65 @@ const Y = (o) => (L("data-v-cfe0ca7e"), o = o(), q(), o), G = { class: "flex ite
     }
   },
   setup(o) {
-    const n = o, t = v(!1), s = v(null), l = new IntersectionObserver((a) => {
-      a.forEach((u) => {
-        u.isIntersecting && !t.value && (t.value = !0, s.value && l.unobserve(s.value));
+    const n = o, e = v(!1), s = v(null), t = new IntersectionObserver((a) => {
+      a.forEach((c) => {
+        c.isIntersecting && !e.value && (e.value = !0, s.value && t.unobserve(s.value));
       });
     });
-    return R(() => {
-      s.value && l.observe(s.value);
-    }), P(() => {
-      s.value && l.unobserve(s.value);
-    }), (a, u) => (r(), c("div", {
+    return E(() => {
+      s.value && t.observe(s.value);
+    }), O(() => {
+      s.value && t.unobserve(s.value);
+    }), (a, c) => (i(), r("div", {
       ref_key: "domRef",
       ref: s,
-      class: m(["2xl:flex items-center justify-center", { "is-visible": t.value }])
+      class: _(["2xl:flex items-center justify-center", { "is-visible": e.value }])
     }, [
-      e("div", Me, [
-        e("div", Te, [
-          (r(), c("svg", {
+      l("div", De, [
+        l("div", Ee, [
+          (i(), r("svg", {
             ref_key: "domRef",
             ref: s,
-            class: m(["circle-wrap", { "is-visible": t.value }]),
+            class: _(["circle-wrap", { "is-visible": e.value }]),
             width: "100%",
             height: "100%"
-          }, Le, 2)),
-          e("div", qe, [
-            e("h2", Re, k(o.title), 1)
+          }, Oe, 2)),
+          l("div", je, [
+            l("h2", Be, k(o.title), 1)
           ])
         ])
       ]),
-      e("div", je, [
-        e("div", Ne, [
-          (r(!0), c(x, null, y(n.list.slice(0, 2), (d, i) => (r(), c("div", {
-            key: i,
+      l("div", Ne, [
+        l("div", Pe, [
+          (i(!0), r(b, null, y(n.list.slice(0, 2), (d, u) => (i(), r("div", {
+            key: u,
             ref_for: !0,
-            ref: "domRef" + i,
-            class: m(["h-box flex flex-col xl:flex-row gap-6 2xl:gap-[18.75rem] px-[0.9375rem]", ["h0" + (i + 1), { "is-visible": t.value }]])
+            ref: "domRef" + u,
+            class: _(["h-box flex flex-col xl:flex-row gap-6 2xl:gap-[18.75rem] px-[0.9375rem]", ["h0" + (u + 1), { "is-visible": e.value }]])
           }, [
-            C(a.$slots, "default", {
+            I(a.$slots, "default", {
               item: d,
-              index: i
+              index: u
             }, void 0, !0)
           ], 2))), 128))
         ]),
-        e("div", Oe, [
-          (r(!0), c(x, null, y(n.list.slice(2, 4), (d, i) => (r(), c("div", {
-            key: i,
+        l("div", Xe, [
+          (i(!0), r(b, null, y(n.list.slice(2, 4), (d, u) => (i(), r("div", {
+            key: u,
             ref_for: !0,
-            ref: "domRef" + i,
-            class: m(["h-box flex flex-col xl:flex-row gap-6 2xl:gap-[18.75rem] px-[0.9375rem]", ["h0" + (i + 3), { "is-visible": t.value }]])
+            ref: "domRef" + u,
+            class: _(["h-box flex flex-col xl:flex-row gap-6 2xl:gap-[18.75rem] px-[0.9375rem]", ["h0" + (u + 3), { "is-visible": e.value }]])
           }, [
-            C(a.$slots, "default", {
+            I(a.$slots, "default", {
               item: d,
-              index: i
+              index: u
             }, void 0, !0)
           ], 2))), 128))
         ])
       ])
     ], 2));
   }
-}), et = /* @__PURE__ */ S(Pe, [["__scopeId", "data-v-19c6e92c"]]), Xe = { class: "relative" }, ze = { class: "flex justify-center mt-8" }, Be = { class: "flex items-center justify-between w-40" }, Fe = ["onClick"], Ve = 50, He = /* @__PURE__ */ w({
+}), st = /* @__PURE__ */ C(ze, [["__scopeId", "data-v-19c6e92c"]]), Ve = { class: "relative" }, Fe = { class: "flex justify-center mt-8" }, He = { class: "flex items-center justify-between w-40" }, Ue = ["onClick"], Ye = 50, Ge = /* @__PURE__ */ w({
   __name: "SlidePlayPause",
   props: {
     listLength: {
@@ -378,90 +413,90 @@ const Y = (o) => (L("data-v-cfe0ca7e"), o = o(), q(), o), G = { class: "flex ite
   },
   emits: ["update:sindex"],
   setup(o, { emit: n }) {
-    const t = n, s = o, l = v(0), a = v(0), u = v(!1), d = v(0);
-    let i = 0;
+    const e = n, s = o, t = v(0), a = v(0), c = v(!1), d = v(0);
+    let u = 0;
     const f = v(!0);
-    function b() {
-      l.value = (l.value + 1) % s.listLength;
+    function x() {
+      t.value = (t.value + 1) % s.listLength;
     }
-    function _() {
-      l.value = (l.value - 1 + s.listLength) % s.listLength;
+    function h() {
+      t.value = (t.value - 1 + s.listLength) % s.listLength;
     }
     function g() {
-      i = setInterval(b, s.intervalMs);
+      u = setInterval(x, s.intervalMs);
     }
     function T() {
-      i !== 0 && clearInterval(i), i = 0;
+      u !== 0 && clearInterval(u), u = 0;
     }
     function A() {
       f.value && (T(), g());
     }
-    function X(h) {
-      l.value = h, A(), t("update:sindex", l.value);
+    function V(p) {
+      t.value = p, A(), e("update:sindex", t.value);
     }
-    function z() {
-      i ? T() : g(), f.value = !f.value;
+    function F() {
+      u ? T() : g(), f.value = !f.value;
     }
-    const B = (h) => {
-      u.value = !0;
-      let p;
-      h.touches && h.touches[0] && (p = h.touches[0].clientX), p && (a.value = p);
-    }, F = (h) => {
-      if (u.value && h.changedTouches[0]) {
-        d.value = h.changedTouches ? h.changedTouches[0].clientX : 0;
-        const p = d.value - a.value;
-        Math.abs(p) >= Ve && (p > 0 ? _() : b(), A()), u.value = !1;
+    const H = (p) => {
+      c.value = !0;
+      let m;
+      p.touches && p.touches[0] && (m = p.touches[0].clientX), m && (a.value = m);
+    }, U = (p) => {
+      if (c.value && p.changedTouches[0]) {
+        d.value = p.changedTouches ? p.changedTouches[0].clientX : 0;
+        const m = d.value - a.value;
+        Math.abs(m) >= Ye && (m > 0 ? h() : x(), A()), c.value = !1;
       }
     };
-    return g(), R(() => {
-      t("update:sindex", l.value), O(() => l.value, (h) => {
-        t("update:sindex", h);
+    return g(), E(() => {
+      e("update:sindex", t.value), X(() => t.value, (p) => {
+        e("update:sindex", p);
       });
-    }), (h, p) => (r(), c("div", null, [
-      e("ul", Xe, [
-        (r(!0), c(x, null, y(s.listLength, (D, $) => N((r(), c("li", {
+    }), (p, m) => (i(), r("div", null, [
+      l("ul", Ve, [
+        (i(!0), r(b, null, y(s.listLength, (D, $) => B((i(), r("li", {
           key: $,
-          class: m({ block: l.value === $ }),
+          class: _({ block: t.value === $ }),
           style: M({ height: `${s.height}` }),
-          onTouchstart: B,
-          onTouchend: F
+          onTouchstart: H,
+          onTouchend: U
         }, [
-          C(h.$slots, "slideContents", {}, void 0, !0)
+          I(p.$slots, "slideContents", {}, void 0, !0)
         ], 38)), [
-          [U, l.value === $]
+          [J, t.value === $]
         ])), 128))
       ]),
-      e("div", ze, [
-        e("span", Be, [
-          e("i", {
-            class: m(["text-xl", [f.value ? "xi-pause" : "xi-play"]]),
-            onClick: p[0] || (p[0] = (D) => z())
+      l("div", Fe, [
+        l("span", He, [
+          l("i", {
+            class: _(["text-xl", [f.value ? "xi-pause" : "xi-play"]]),
+            onClick: m[0] || (m[0] = (D) => F())
           }, null, 2),
-          e("span", {
+          l("span", {
             class: "slide-dtn bg-[url(/images/icon_arrow_prev.svg)]",
-            onClick: p[1] || (p[1] = (D) => (_(), A()))
+            onClick: m[1] || (m[1] = (D) => (h(), A()))
           }),
-          (r(!0), c(x, null, y(s.listLength, (D, $) => (r(), c("span", {
+          (i(!0), r(b, null, y(s.listLength, (D, $) => (i(), r("span", {
             key: $,
-            class: m(["dot", { active: l.value === $ }]),
-            onClick: (Ue) => X($)
-          }, null, 10, Fe))), 128)),
-          e("span", {
+            class: _(["dot", { active: t.value === $ }]),
+            onClick: (Je) => V($)
+          }, null, 10, Ue))), 128)),
+          l("span", {
             class: "slide-dtn bg-[url(/images/icon_arrow_next.svg)]",
-            onClick: p[2] || (p[2] = (D) => (b(), A()))
+            onClick: m[2] || (m[2] = (D) => (x(), A()))
           })
         ])
       ])
     ]));
   }
-}), tt = /* @__PURE__ */ S(He, [["__scopeId", "data-v-8ed36c18"]]);
+}), nt = /* @__PURE__ */ C(Ge, [["__scopeId", "data-v-8ed36c18"]]);
 export {
-  et as CenteringEffect,
-  Ze as FadeAnimation,
-  Ge as HeaderModalButton,
-  Je as ListDeco,
-  tt as SlidePlayPause,
-  Ke as SlideScroll,
-  Qe as TextShow,
-  We as TextTyping
+  st as CenteringEffect,
+  lt as FadeAnimation,
+  Qe as HeaderModalButton,
+  We as ListDeco,
+  nt as SlidePlayPause,
+  Ze as SlideScroll,
+  et as TextShow,
+  tt as TextTyping
 };

@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { computed, ref, watch } from 'vue';
+import AppearEffect from './AppearEffect.vue';
 
 const props = defineProps<{
   text: string
@@ -29,7 +30,9 @@ function startTyping() {
   intervalId = setInterval(typing, typingInterval.value);
 }
 
-startTyping();
+function handleShow() {
+  startTyping();
+};
 
 watch(
   () => [props.text, props.intervalMs],
@@ -41,9 +44,11 @@ watch(
 
 </script>
 <template>
-  <p
+  <AppearEffect @show="handleShow">
+    <p
     class="whitespace-pre-wrap"
-  >
+    >
     {{ typedText }}
   </p>
+</AppearEffect>
 </template>
